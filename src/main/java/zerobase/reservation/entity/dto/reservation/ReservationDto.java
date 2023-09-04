@@ -38,7 +38,6 @@ public class ReservationDto {
             .code(reservation.getCode())
             .shopId(reservation.getShop().getId())
             .reservedDate(reservation.getReservedDate())
-            .reserveTime(reservation.getReserveTime().getTimeString())
             .visitedAt(reservation.getVisitedAt())
             .accepted(reservation.getAccepted())
             .visited(reservation.getVisited())

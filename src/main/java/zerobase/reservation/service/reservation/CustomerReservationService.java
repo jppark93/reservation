@@ -1,7 +1,6 @@
 package zerobase.reservation.service.reservation;
 
 
-import com.amerikano.reservation.type.ReserveTime;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
@@ -83,7 +82,6 @@ public class CustomerReservationService {
         return Reservation.builder()
             .customerId(customerId)
             .shop(shop)
-            .code(getRandomCode())
             .reservedDate(requestDto.getReservedDate())
             .accepted(null)
             .visited(false)
